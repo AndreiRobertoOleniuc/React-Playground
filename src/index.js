@@ -1,9 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Navbar from "./Navbar";
-import "bootstrap/dist/css/bootstrap.css";
+import App from "./components/App";
 
-ReactDOM.render(<Navbar />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
 
 /*<React.StrictMode>
     <App />
