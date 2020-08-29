@@ -1,17 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import Navbar from "./Navbar";
+import "bootstrap/dist/css/bootstrap.css";
 
-ReactDOM.render(
-  <React.StrictMode>
+ReactDOM.render(<Navbar />, document.getElementById("root"));
+
+/*<React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+  </React.StrictMode>,*/
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+/*
+class Car extends React.Component {
+  constructor() {
+    super();
+    this.state = { color: "red" };
+  }
+  render() {
+    return <h2>Hi, I am a {this.props.color} Car!</h2>;
+  }
+}
+
+class Garage extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Who lives in my Garage</h1>
+        <Car color="red" />
+      </div>
+    );
+  }
+}
+*/
