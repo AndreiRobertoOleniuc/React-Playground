@@ -2,9 +2,11 @@ import React from "react";
 
 function Footer() {
   return (
-    <div>
-      <h1></h1>
-    </div>
+    <footer className="footer">
+      <div className="container">
+        <span class="text-muted">@Andrei Oleniuc</span>
+      </div>
+    </footer>
   );
 }
 export default Footer;
