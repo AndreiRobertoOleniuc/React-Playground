@@ -1,12 +1,15 @@
 import React from "react";
+import "./style/item.css";
 
-function Item() {
+function Item(props) {
   return (
     <div className="row">
-      <div className="col">
-        <input type="checkbox" id="scales" name="scales" />
-        <label htmlFor="scales">Punkt</label>
+      <div className="col"></div>
+      <div className="col border-bottom border-dark item text-dark">
+        <input type="checkbox" id="checkbox" />
+        <label>{props.text}</label>
       </div>
+      <div className="col"></div>
     </div>
   );
 }
